@@ -5,7 +5,7 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contacto',
 };
 ---
 
@@ -22,22 +22,27 @@ const metadata = {
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Nombre',
+      },
+      {
+        type: 'website',
+        name: 'website',
+        label: 'Pagina web',
       },
       {
         type: 'email',
         name: 'email',
-        label: 'Email',
+        label: 'Correo electrónico',
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Cuéntanos cuáles son tus objetivos de sostenibilidad',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'He leído y acepto la Política de privacidad.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Nuestro equipo de expertos suele analizar y responder en 72 horas laborables."
   />
 
   <!-- Features2 Widget ************** -->
@@ -66,7 +71,7 @@ const metadata = {
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'info@regeneralia.com',
         icon: 'tabler:mail',
       },
       {
